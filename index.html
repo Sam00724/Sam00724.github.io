@@ -4,26 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shervin Sam S | Software Engineer</title>
-  <meta name="description" content="Software Engineer with 3 years of experience in Java and L2/L3 Production Support" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SEO -->
+  <meta name="description" content="Software Engineer in Dubai with 3 years of experience in Java, L2/L3 Production Support, Application Support, and Enterprise Systems." />
+  <meta name="keywords" content="Java Developer Dubai, Application Support Engineer UAE, L2 L3 Support, Software Engineer Dubai" />
+  <meta name="author" content="Shervin Sam S" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #e5e7eb; line-height: 1.6; }
-    header { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px; }
-    header h1 { font-size: 3rem; color: #38bdf8; }
-    header p { font-size: 1.2rem; margin-top: 10px; color: #cbd5f5; }
-    nav { position: fixed; top: 0; width: 100%; background: rgba(15,23,42,0.9); padding: 15px; text-align: center; z-index: 100; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #020617, #0f172a);
+      color: #e5e7eb;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed; top: 0; width: 100%;
+      background: rgba(2,6,23,0.95);
+      padding: 15px; text-align: center; z-index: 100;
+    }
     nav a { color: #e5e7eb; margin: 0 15px; text-decoration: none; font-weight: 500; }
     nav a:hover { color: #38bdf8; }
-    section { max-width: 1000px; margin: auto; padding: 80px 20px; }
-    h2 { font-size: 2rem; color: #38bdf8; margin-bottom: 20px; }
-    .skills span { display: inline-block; background: #1e293b; padding: 8px 14px; border-radius: 20px; margin: 6px; font-size: 0.9rem; }
-    .card { background: #1e293b; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
-    footer { text-align: center; padding: 30px; background: #020617; font-size: 0.9rem; }
-    .btn { display: inline-block; margin-top: 20px; padding: 10px 22px; border-radius: 25px; background: #38bdf8; color: #020617; text-decoration: none; font-weight: 600; }
-    .btn:hover { background: #0ea5e9; }
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+    header h1 { font-size: 3.2rem; color: #38bdf8; }
+    header p { font-size: 1.3rem; margin-top: 10px; color: #cbd5f5; }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(56,189,248,0.3); }
+    section { max-width: 1100px; margin: auto; padding: 90px 20px; }
+    h2 { font-size: 2.2rem; color: #38bdf8; margin-bottom: 25px; }
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 10px 18px;
+      border-radius: 25px;
+      margin: 8px;
+      font-size: 0.9rem;
+    }
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: #020617;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
     @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
+      header h1 { font-size: 2.3rem; }
     }
   </style>
 </head>
@@ -33,25 +96,28 @@
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<header>
+<header data-aos="fade-up">
   <div>
     <h1>Shervin Sam S</h1>
     <p>Software Engineer | Java | L2/L3 Production Support</p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <a href="#contact" class="btn">Hire Me</a>
+    <br />
+    <a href="resume.pdf" class="btn" style="margin-left:10px;">Download Resume</a>
   </div>
 </header>
 
-<section id="about">
+<section id="about" data-aos="fade-up">
   <h2>About Me</h2>
   <p>
-    I am a Software Engineer with 3 years of experience in L2/L3 Production Support for Java and ASP.NET enterprise applications. I have strong expertise in incident management, SLA adherence, root cause analysis, debugging, and production environment support. I am currently based in Dubai, UAE and actively seeking suitable IT opportunities.
+    Software Engineer with 3 years of experience in L2/L3 Production Support for Java and ASP.NET enterprise applications. Strong expertise in incident management, SLA adherence, RCA, debugging, and production support. Currently based in Dubai, UAE and actively seeking IT opportunities.
   </p>
 </section>
 
-<section id="skills">
+<section id="skills" data-aos="fade-up">
   <h2>Technical Skills</h2>
   <div class="skills">
     <span>Java</span><span>ASP.NET</span><span>Spring Boot</span><span>REST APIs</span>
@@ -60,30 +126,47 @@
   </div>
 </section>
 
-<section id="experience">
+<section id="experience" data-aos="fade-up">
   <h2>Experience</h2>
   <div class="card">
     <h3>Cognizant Technology Solutions</h3>
     <p><strong>Jr. Software Engineer</strong> | Jan 2023 – Oct 2025</p>
     <ul>
-      <li>L2/L3 production support for Java and ASP.NET applications in 24/7 environments</li>
-      <li>Worked on US insurance client (Liberty Mutual Insurance)</li>
+      <li>L2/L3 production support for Java & ASP.NET enterprise applications</li>
+      <li>Worked with US insurance client (Liberty Mutual Insurance)</li>
       <li>Incident, problem, and service request handling via Jira & ServiceNow</li>
-      <li>RCA, log analysis, and multi-environment support (PROD, UAT, TEST, DEV)</li>
+      <li>RCA, log analysis, multi-environment support (PROD/UAT/TEST/DEV)</li>
     </ul>
   </div>
 </section>
 
-<section id="contact">
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>AI Power Virtual Agent</h3>
+    <p>Automated support requests and improved response efficiency by 40%.</p>
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
   <p>Email: <a href="mailto:shervinsam49@gmail.com" style="color:#38bdf8">shervinsam49@gmail.com</a></p>
   <p>Phone: +971 52 344 5310</p>
   <p>Location: Dubai, UAE</p>
+  <div class="social">
+    <a href="#">LinkedIn</a> |
+    <a href="#">GitHub</a>
+  </div>
 </section>
 
 <footer>
-  © 2026 Shervin Sam S | Portfolio Website
+  © 2026 Shervin Sam S | Designed for UAE IT Recruiters
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
